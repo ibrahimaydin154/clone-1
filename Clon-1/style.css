@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;  
+}
+
+.NavPanel{
+    display: flex;  
+    background-color: white;
+    height: 48px;  
+}
+.navLeft{
+    display: flex; 
+    align-items: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.navRight{
+    display: flex; 
+    justify-content: space-evenly;
+    width: 50%;   
+    height: auto;    
+}
+.NavBarList{
+    display: flex;  
+ 
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+.NavBarList li{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    cursor:pointer ;
+ } 
+#Login{    
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; 
+    height: 20px;
+    text-transform: uppercase;
+    cursor:pointer ;
+}
+#Newsletters {
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-decoration-color: #fc0; 
+    background-image: linear-gradient(#fc0 0 0);
+    background-size: 100% 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.3s;
+  } 
+  #Newsletters:hover {
+    background-size: 100% 100%;
+  }
+
+  #Subscribe{
+    height: 100%;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;  
+    background-image: linear-gradient(#fc0 0 0);
+    background-size:0 100% ;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: 0.3s;
+  } 
+
+  #Subscribe:hover,
+  .issues a:hover  {
+    color: #000;
+    background-size: 100% 100%;
+  }
+
+  .Main{   
+  display: flex;
+  flex-direction: column;
+  align-items: CENTER;
+  text-align: center;
+  color: #fff; 
+  }
+
+  .Main h1,
+  .issues h1  {
+  padding: 40px 0;
+  font-size: 4rem;
+}
+.Main p,
+.issues p{
+  font-size: 1.5rem;
+}
+.Main a ,
+.issues a 
+ {
+  text-decoration-color: #fc0;
+  color: #fff;
+  background-image: linear-gradient(#fc0 0 0);
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+}
+.Main a:hover  {
+  color: #000;
+  background-size: 100% 100%;
+}
+.GeneralHeading__Line {
+    background-color: #fc0;
+    height: 4px;
+    line-height: 0;
+    margin: 21px auto 0;
+    width: 30px;
+}
+
+.latestStoriesMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .latestStoriesMainLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .latestStoriesMainLeft h2 {
+    border-left: 3px solid #fc0;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .TodayLists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .TodayListItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  .TodayListItem img {
+    flex-basis: 20%;
+    width: 90px;
+    height: 90px;
+  }
+
+  .TodayListItemRight {
+    flex-basis: 65%;
+  }
+  .TodayListItemRight p {
+    text-align: start;
+  }
+  .TodayListItemRight h3 {
+    margin-bottom: 8px;
+    text-align: start;
+  }
+  .TodayListItemRight h3 i {
+    margin-right: 10px;
+  }
+  .latestStoriesMainRight{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin: 0 50 
+  }
+  .rightTop {
+    flex-basis: 40%;
+     
+  }
+  .Bottom {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .rightMetin {
+    flex-basis: 50%;
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  .rightMetin img {
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+  }
+  .rightMetin h4 ,span{
+    position: absolute;
+    bottom: 140px;
+    left: 30px;
+  }
+
+  .rightMetin span{
+    position: absolute;
+    bottom: 125px;
+    left: 30px;
+  }
+  #TopSpan{
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+  }
+  #TopSpanblack{
+    color: #000;
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+  }
+  .rightMetin p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: start;
+  }
+  .rightMetin a {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: start;
+  }
+  .rightMetin:hover img {
+    transform: scale(1.3);
+  }
+
+
+
+  .missionPanel {
+    background: #fff;
+    width: 100%;
+    color: #000;
+    padding: 60px 0;
+  }
+  .missionPanel h1 {
+    font-size: 3rem;
+  }
+  .missionBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .missionBottomRight {
+    width: 500px;
+    padding: 0 50px;
+  }
+  .missionBottomRight h3 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .Card {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  .CardTop {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .CardTop img {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+  .CardBottom {
+    position: relative;
+    background-color: #fff;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    align-items: start;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .CardBottom h4 {
+    color: #000;
+  }
+  
+  .CardBottom p {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .CardBottom a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .Card:hover .CardTop img {
+    transform: scale(1.1);
+  }
+  .Card:hover .CardBottom {
+    border-top: 5px solid #fc0;
+  }
+  
+  .secondReadCard .CardBottom {
+    background-color: #000;
+  }
+  .secondReadCard .CardBottom p,
+  .secondReadCard .CardBottom h4,
+  .secondReadCard .CardBottom h5,
+  .secondReadCard .CardBottom a {
+    color: #fff;
+  }
+
+  .travelMain {
+    background: linear-gradient(to top, #000, transparent), url(https://i.natgeofe.com/n/7182c9cb-b0f1-4490-8386-ce2ae7ab900a/nationalgeographic_2384595_3x2.jpg?w=921.5999755859375&amp;h=614.699983716011&quot;);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .TravelMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .travelMainLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 20px;
+  }
+  .travelMainLeft h2 {
+    border-left: 3px solid #fc0; 
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+   
+  }
+  .travelMainRight{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin: 0 50 
+  }
+
+
+.podcastsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 100px 0;
+  }
+  .podcastsMain h2 {
+    color: #000;
+    font-size: 4rem;
+    margin-bottom: 100px;
+  }
+  .podcastCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+  }
+  .podcastCard {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  .podcastCard p {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: start;
+  }
+  .podcastCard img {
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .podcastCard:hover img {
+    transform: scale(1.2);
+  }
+
+  .IssueiMain {
+    background: linear-gradient(to top, #000, transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+
+
+.footerTop {
+    margin-bottom: 60px;
+  }
+  .footerTop ul {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .footerTop ul li {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 50px;
+  }
+  .footerTop ul li h3 {
+    margin: 50px 0 20px;
+    font-weight: 600;
+  }
+  .footerTop ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+  }
+  .footerTop ul li a:hover {
+    text-decoration: underline;
+  }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.social i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+#USFlag {
+  width: 30px;
+  height: 20px;
+}
+.social i:hover {
+  color: #fc0;
+}
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+.footerBottomBorder{
+    display: flex;
+    flex-direction: column;  
+}
+
+.footerBottom p {
+  color: gray;
+  padding: 0 20px;
+}
+
+ 
